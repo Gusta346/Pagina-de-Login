@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container" id="container">
+
+        <div class="form-container register-container">
+            <form action="#">
+                <h1>Registre-se aqui</h1>
+                <input class="input" type="text" placeholder="Nome">
+                <input class="input" type="email" placeholder="E-mail">
+                <input class="input" type="password" placeholder="Senha">
+                <input class="input" type="password" placeholder="Confirme sua senha">
+                <button class="botao">Registrar</button>
+                <span>Ou use sua conta</span>
+                <div class="social-container">
+                    <a href="https://www.facebook.com"><img src="./img/icons8-facebook-novo-50.png" class="social"></a>
+                    <a href="https://www.linkedin.com"><img src="./img/icons8-linkedin-50.png" class="social"></a>
+                    <a href="https://www.google.com"><img src="./img/icons8-google-50.png" class="social"></a>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-container login-container">
+            <form action="#">
+                <h1>Logue aqui</h1>
+                <input class="input" type="email" placeholder="E-mail" id="usuario">
+                <input class="input" type="password" placeholder="Senha" id="senha">
+                <div class="content">
+                    <div class="checkbox">
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        <label>Lembrar</label>
+                    </div>
+                </div>
+                <button class="botao">Login</button>
+                <span>Ou use sua conta</span>
+                <div class="social-container">
+                    <a href="https://www.facebook.com"><img src="./img/icons8-facebook-novo-50.png" class="social"></a>
+                    <a href="https://www.linkedin.com"><img src="./img/icons8-linkedin-50.png" class="social"></a>
+                    <a href="https://www.google.com"><img src="./img/icons8-google-50.png" class="social"></a>
+                </div>
+            </form>
+        </div>
+
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1 class="titulo">Ola <br> Amigos</h1>
+                    <p>Se voce tem uma conta, logue aqui e se divirta</p>
+                    <button class="ghost" id="login" onclick="validar()">Login
+                    </button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1 class="titulo">Começe sua <br>Jornada agora</h1>
+                    <p>Se voce não tem uma conta ainda, junte-se a nós e começe sua jornada</p>
+                    <button class="ghost" id="register">Registre-se
+                        <i class="ini ini-arrow-right register"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
